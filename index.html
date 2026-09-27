@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ms. Nyunt Nyunt Swe | Quantity Surveyor (MEP)</title>
+<style>
+:root{--b:#070b12;--p:#101a28;--p2:#142338;--blue:#1687ff;--cyan:#43c6ff;--w:#f7fafc;--m:#9aaabd;--l:rgba(255,255,255,.1)}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{font-family:Inter,Segoe UI,Arial,sans-serif;background:radial-gradient(circle at 15% 10%,#1687ff22,transparent 28%),var(--b);color:var(--w);line-height:1.7}
+a{color:inherit;text-decoration:none}.container{width:min(1180px,92%);margin:auto}
+nav{position:fixed;top:0;left:0;right:0;z-index:99;background:#070b12cc;backdrop-filter:blur(18px);border-bottom:1px solid transparent}
+nav.scrolled{border-color:var(--l)}.nav{height:72px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:800;letter-spacing:.08em;font-size:15px}.logo span{color:var(--cyan)}
+.links{display:flex;gap:26px;list-style:none}.links a{font-size:13px;color:#c8d3df}.links a:hover{color:white}.menu{display:none;background:none;border:0;color:white;font-size:24px}
+.hero{min-height:100vh;display:grid;place-items:center;padding:120px 0 70px}
+.hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:65px;align-items:center}
+.eyebrow{display:inline-flex;gap:8px;padding:7px 12px;border:1px solid #43c6ff44;border-radius:99px;color:#9bdcff;font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+.dot{width:7px;height:7px;background:var(--cyan);border-radius:50%;margin-top:7px;box-shadow:0 0 15px var(--cyan)}
+h1{font-size:clamp(44px,6vw,76px);line-height:1.02;letter-spacing:-.05em;margin:22px 0 15px}.gradient{color:transparent;background:linear-gradient(90deg,#fff,#7ed7ff);background-clip:text}
+.hero h2{font-size:21px;font-weight:500;color:#bac8d7;margin-bottom:20px}.copy{max-width:720px;color:var(--m);font-size:16px}
+.actions{display:flex;flex-wrap:wrap;gap:11px;margin-top:28px}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:47px;padding:0 18px;border-radius:9px;border:1px solid var(--l);font-size:13px;font-weight:800;transition:.25s}
+.primary{background:linear-gradient(135deg,var(--blue),#095bd3);border:0}.btn:hover{transform:translateY(-2px)}.dark{background:#ffffff08}
+.stats{display:flex;gap:34px;margin-top:38px}.stat strong{display:block;font-size:27px}.stat span{font-size:10px;color:var(--m);text-transform:uppercase;letter-spacing:.08em}
+.card{background:#101a28bb;border:1px solid var(--l);border-radius:20px;padding:29px;box-shadow:0 25px 70px #00000055}.mark{width:85px;height:85px;border-radius:19px;display:grid;place-items:center;font-weight:900;font-size:28px;background:#173c65;border:1px solid #43c6ff44;margin-bottom:20px}
+.info{display:flex;justify-content:space-between;gap:15px;padding:11px 0;border-bottom:1px solid var(--l);font-size:13px}.info span:first-child{color:var(--m)}.info span:last-child{text-align:right}
+section{padding:100px 0}.head{margin-bottom:43px}.kicker{color:var(--cyan);font-size:10px;font-weight:900;letter-spacing:.18em;text-transform:uppercase}.head h2{font-size:clamp(31px,4vw,45px);letter-spacing:-.03em;margin:8px 0}.head p{color:var(--m);max-width:720px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:22px}.panel{background:#101a28b8;border:1px solid var(--l);border-radius:17px;padding:28px}.panel p{color:#bac6d4;margin-bottom:14px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}.chip{padding:7px 10px;border:1px solid #1687ff33;background:#1687ff12;border-radius:99px;color:#bfe5ff;font-size:12px}
+.alt{border-top:1px solid var(--l);border-bottom:1px solid var(--l);background:#ffffff03}.timeline{position:relative}.timeline:before{content:"";position:absolute;left:7px;top:5px;bottom:5px;width:1px;background:linear-gradient(var(--blue),transparent)}
+.job{position:relative;padding-left:40px;margin-bottom:28px}.job:before{content:"";position:absolute;left:1px;top:10px;width:13px;height:13px;border-radius:50%;background:var(--blue);box-shadow:0 0 0 5px #1687ff19}.jobbox{background:#101a28b8;border:1px solid var(--l);border-radius:15px;padding:24px}.jobtop{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.job h3{font-size:18px}.company{color:#79d1ff;font-weight:800;font-size:13px}.date{color:var(--m);font-size:12px}.job ul{padding-left:18px;color:#b8c5d3;font-size:14px;margin-top:13px}.job li{margin:6px 0}
+.projects{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.project{min-height:175px;padding:22px;border:1px solid var(--l);border-radius:15px;background:linear-gradient(145deg,#122031,#0a111b);transition:.3s}.project:hover{transform:translateY(-6px);border-color:#43c6ff55}.num{font-size:10px;color:#60758b;letter-spacing:.15em}.project h3{font-size:16px;margin:15px 0 7px}.project p{font-size:13px;color:var(--m)}
+.gallery{display:grid;grid-template-columns:1fr 1fr;gap:20px}.photo{overflow:hidden;border-radius:16px;border:1px solid var(--l);background:#0d1622}.photo img{display:block;width:100%;cursor:pointer;transition:.4s}.photo:hover img{transform:scale(1.02)}.caption{padding:14px;color:#b8c6d4;font-size:12px}
+.certs{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}.cert{padding:19px;border:1px solid var(--l);background:#101a28b8;border-radius:13px}.cert h3{font-size:13px}.cert p{font-size:11px;color:var(--m);margin-top:5px}
+.contact{background:linear-gradient(145deg,#0a1726,#07101a);border-top:1px solid var(--l)}.contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.contact-card{padding:23px;border:1px solid var(--l);border-radius:14px;background:#ffffff06}.contact-card small{display:block;color:var(--m);margin-bottom:4px}.contact-card a{color:#d8f2ff}
+footer{border-top:1px solid var(--l);padding:27px 0;color:#7f91a4;font-size:12px}
+.reveal{opacity:0;transform:translateY(22px);transition:.75s}.reveal.show{opacity:1;transform:none}
+.lightbox{display:none;position:fixed;inset:0;z-index:200;background:#000e;align-items:center;justify-content:center;padding:20px}.lightbox.open{display:flex}.lightbox img{max-width:95vw;max-height:90vh}.close{position:absolute;right:25px;top:10px;font-size:38px;cursor:pointer}
+@media(max-width:900px){.hero-grid,.about{grid-template-columns:1fr}.projects{grid-template-columns:1fr 1fr}.certs{grid-template-columns:1fr 1fr}}
+@media(max-width:650px){.links{display:none}.menu{display:block}.links.mobile{display:flex;position:absolute;top:72px;left:0;right:0;background:#07101a;padding:18px;flex-direction:column}.projects,.gallery,.certs,.contact-grid{grid-template-columns:1fr}.stats{gap:20px}section{padding:75px 0}}
+</style>
+</head>
+<body>
+
+<nav id="nav"><div class="container nav">
+<a class="logo" href="#home">NYUNT <span>NYUNT SWE</span></a>
+<button class="menu" id="menu">☰</button>
+<ul class="links" id="links">
+<li><a href="#about">About</a></li><li><a href="#experience">Experience</a></li><li><a href="#projects">Projects</a></li><li><a href="#gallery">Gallery</a></li><li><a href="#contact">Contact</a></li>
+</ul></div></nav>
+
+<header class="hero" id="home"><div class="container hero-grid">
+<div class="reveal">
+<div class="eyebrow"><span class="dot"></span>Quantity Surveyor • MEP</div>
+<h1>Ms. Nyunt<br><span class="gradient">Nyunt Swe</span></h1>
+<h2>Quantity Surveyor | Cost Estimation | BOQ | Procurement | Cost Control</h2>
+<p class="copy">Quantity Surveyor with over 9 years of experience in quantity surveying, cost estimation, BOQ preparation, quantity take-offs, procurement, cost control, variation orders, payment claims, final accounts and project coordination across ELV, MEP and telecommunications projects.</p>
+<div class="actions">
+<a class="btn primary" href="Ms_Nyunt_Nyunt_Swe_CV.pdf" download>↓ Download CV</a>
+<a class="btn dark" href="https://wa.me/66804162922" target="_blank">WhatsApp Me</a>
+<a class="btn dark" href="mailto:nawnyuntnyuntswe@gmail.com">Email Me</a>
+</div>
+<div class="stats"><div class="stat"><strong>9+</strong><span>Years Experience</span></div><div class="stat"><strong>12+</strong><span>Project References</span></div><div class="stat"><strong>MEP</strong><span>Core Expertise</span></div></div>
+</div>
+<div class="card reveal"><div class="mark">QS</div><h3>Professional Snapshot</h3>
+<div class="info"><span>Position</span><span>Quantity Surveyor (MEP)</span></div>
+<div class="info"><span>Location</span><span>Bangkok, Thailand</span></div>
+<div class="info"><span>Availability</span><span>Immediately</span></div>
+<div class="info"><span>English</span><span>Intermediate</span></div>
+<div class="info"><span>Mandarin</span><span>Basic</span></div>
+<div class="info"><span>Burmese</span><span>Native</span></div>
+</div>
+</div></header>
+
+<section id="about"><div class="container">
+<div class="head reveal"><div class="kicker">01 / Profile</div><h2>Built around cost, coordination & delivery.</h2><p>Professional experience combining Quantity Surveying, MEP/ELV coordination, procurement and site execution.</p></div>
+<div class="about">
+<div class="panel reveal"><p>Experienced in reviewing ELV drawings and specifications, checking site conditions, preparing quantity take-offs, material schedules, procurement plans and project documentation.</p><p>Experienced in obtaining and comparing supplier/subcontractor quotations, supporting tender submissions, negotiating project pricing and coordinating clients, project managers, contractors and suppliers.</p><p>Experienced in variation orders, payment claims, certifications, final accounts, site visits and project cost control.</p></div>
+<div class="panel reveal"><h3>Core Expertise</h3><div class="chips">
+<span class="chip">Quantity Surveying</span><span class="chip">Cost Estimation</span><span class="chip">BOQ</span><span class="chip">Quantity Take-Off</span><span class="chip">Procurement</span><span class="chip">Cost Control</span><span class="chip">Variation Orders</span><span class="chip">Final Accounts</span><span class="chip">ELV / MEP</span><span class="chip">AutoCAD 2D</span><span class="chip">Revit MEP</span><span class="chip">Project Coordination</span>
+</div></div></div></div></section>
+
+<section class="alt" id="experience"><div class="container">
+<div class="head reveal"><div class="kicker">02 / Experience</div><h2>Professional Experience</h2></div>
+<div class="timeline">
+<div class="job reveal"><div class="jobbox"><div class="jobtop"><div><h3>Quantity Surveyor</h3><div class="company">Grand Unique Co., Ltd. • Yangon, Myanmar</div></div><div class="date">May 2022 – August 2026</div></div><ul><li>Reviewed ELV drawings, specifications and site conditions to verify requirements and quantities.</li><li>Prepared quantity take-offs, material schedules, procurement plans and documentation.</li><li>Obtained quotations and conducted cost comparisons for tender submissions.</li><li>Negotiated with suppliers and subcontractors to support competitive pricing.</li><li>Processed variation orders, payment claims, certifications and final accounts.</li></ul></div></div>
+<div class="job reveal"><div class="jobbox"><div class="jobtop"><div><h3>Project Coordinator</h3><div class="company">SIAE Microelettronica Co., Ltd. • Yangon, Myanmar</div></div><div class="date">June 2020 – April 2022</div></div><ul><li>Developed project plans and timelines for telecommunications rollouts and system upgrades.</li><li>Coordinated technical, procurement, logistics and project teams.</li><li>Tracked telecommunications equipment and managed inventory.</li><li>Supported software system upgrades, contributing to 100% system availability with zero downtime.</li><li>Prepared project documents and Acceptance Certificates.</li></ul></div></div>
+<div class="job reveal"><div class="jobbox"><div class="jobtop"><div><h3>Site Engineer / Quantity Surveyor</h3><div class="company">Champac Co., Ltd. • Yangon, Myanmar</div></div><div class="date">October 2012 – May 2020</div></div><ul><li>Conducted site surveys for ELV installation and tower construction.</li><li>Prepared drawings, cost estimates and project cost calculations.</li><li>Supervised excavation, erection, equipment installation and cable laying.</li><li>Monitored quality, safety and timely completion.</li><li>Coordinated vendors, suppliers and logistics providers.</li></ul></div></div>
+</div></div></section>
+
+<section id="projects"><div class="container">
+<div class="head reveal"><div class="kicker">03 / Portfolio</div><h2>Selected Project References</h2><p>Project references included in the supplied CV/portfolio.</p></div>
+<div class="projects">
+<article class="project reveal"><span class="num">01</span><h3>Lightning Protection System</h3><p>Lightning protection system project.</p></article>
+<article class="project reveal"><span class="num">02</span><h3>Fire Alarm System</h3><p>Fire alarm system project.</p></article>
+<article class="project reveal"><span class="num">03</span><h3>Car Park Barrier System</h3><p>Car park barrier system project.</p></article>
+<article class="project reveal"><span class="num">04</span><h3>Fingerprint Time Attendance</h3><p>Fingerprint time attendance system.</p></article>
+<article class="project reveal"><span class="num">05</span><h3>Aim Star Network Office CCTV</h3><p>Closed Circuit Television System project.</p></article>
+<article class="project reveal"><span class="num">06</span><h3>Ooredoo Myanmar Limited</h3><p>Microwave supply and installation.</p></article>
+<article class="project reveal"><span class="num">07</span><h3>Mytel & Ooredoo Tower Construction</h3><p>Telecommunications tower construction.</p></article>
+<article class="project reveal"><span class="num">08</span><h3>Telecom Tower Grounding System</h3><p>Design, supply and installation of grounding system.</p></article>
+<article class="project reveal"><span class="num">09</span><h3>Villa & Hospital</h3><p>Lightning protection system project.</p></article>
+<article class="project reveal"><span class="num">10</span><h3>Solar PV System</h3><p>Solar PV system drawing using SketchUp.</p></article>
+<article class="project reveal"><span class="num">11</span><h3>City Loft Residential Project</h3><p>Purchasing and project coordination.</p></article>
+<article class="project reveal"><span class="num">12</span><h3>BIM Plumbing System</h3><p>BIM modelling plumbing system.</p></article>
+</div></div></section>
+
+<section id="gallery" class="alt"><div class="container">
+<div class="head reveal"><div class="kicker">04 / Project Gallery</div><h2>Actual Project References</h2><p>Visual pages extracted directly from the supplied portfolio PDF.</p></div>
+<div class="gallery">
+<div class="photo reveal"><img src="project-reference-3.jpg" alt="Actual project reference photos page 3" onclick="openBox(this.src)"><div class="caption">Project Reference Photos — Car Park Barrier, Fire Alarm, Lightning Protection, CCTV, Ooredoo and Tower Projects</div></div>
+<div class="photo reveal"><img src="project-reference-4.jpg" alt="Actual project reference photos page 4" onclick="openBox(this.src)"><div class="caption">Additional References — Solar PV, Car Park Barrier, City Loft Residential and BIM Plumbing</div></div>
+</div></div></section>
+
+<section><div class="container">
+<div class="head reveal"><div class="kicker">05 / Qualifications</div><h2>Education & Certifications</h2></div>
+<div class="about">
+<div class="panel reveal"><h3>Bachelor of Engineering (Electronics)</h3><p>Technological University Hinthada, Myanmar</p><p>2007 – 2011</p></div>
+<div class="panel reveal"><h3>Software & Technical Skills</h3><div class="chips"><span class="chip">AutoCAD 2D</span><span class="chip">Revit MEP</span><span class="chip">Microsoft Office</span><span class="chip">Outlook</span><span class="chip">SketchUp</span></div></div>
+</div>
+<div class="certs" style="margin-top:18px">
+<div class="cert reveal"><h3>M&E Quantity Surveyor</h3><p>Professional certificate</p></div><div class="cert reveal"><h3>Fire Safety & Fire Protection</h3><p>Technical training</p></div><div class="cert reveal"><h3>Project Management</h3><p>Professional training</p></div><div class="cert reveal"><h3>Network Engineering</h3><p>Technical training</p></div><div class="cert reveal"><h3>Occupational Health & Safety</h3><p>Specialist certificate</p></div><div class="cert reveal"><h3>Warehouse Operation & Management</h3><p>Management training</p></div><div class="cert reveal"><h3>Revit MEP Modelling Essentials</h3><p>Technical certificate</p></div><div class="cert reveal"><h3>AutoCAD 2D</h3><p>Technical certificate</p></div>
+</div></div></section>
+
+<section class="contact" id="contact"><div class="container">
+<div class="head reveal"><div class="kicker">06 / Contact</div><h2>Let's connect.</h2><p>For Quantity Surveyor, MEP or project coordination opportunities.</p></div>
+<div class="contact-grid">
+<div class="contact-card reveal"><small>WhatsApp</small><a href="https://wa.me/66804162922" target="_blank">+66 80 416 2922</a></div>
+<div class="contact-card reveal"><small>Email</small><a href="mailto:nawnyuntnyuntswe@gmail.com">nawnyuntnyuntswe@gmail.com</a></div>
+<div class="contact-card reveal"><small>Location</small><span>Bangkok, Thailand</span></div>
+</div>
+<div class="actions reveal"><a class="btn primary" href="Ms_Nyunt_Nyunt_Swe_CV.pdf" download>↓ Download CV</a><a class="btn dark" href="https://www.linkedin.com/in/nyunt-nyunt-swe-electronics" target="_blank">LinkedIn</a><a class="btn dark" href="https://swenyunt.netlify.app/" target="_blank">Personal Website</a></div>
+</div></section>
+
+<footer><div class="container">© 2026 Ms. Nyunt Nyunt Swe · Quantity Surveyor (MEP)</div></footer>
+
+<div class="lightbox" id="box" onclick="closeBox()"><span class="close">&times;</span><img id="big" alt="Project photo"></div>
+
+<script>
+const nav=document.getElementById('nav');
+addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>20));
+const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('show');obs.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(x=>obs.observe(x));
+document.getElementById('menu').onclick=()=>document.getElementById('links').classList.toggle('mobile');
+document.querySelectorAll('.links a').forEach(x=>x.onclick=()=>document.getElementById('links').classList.remove('mobile'));
+function openBox(src){document.getElementById('big').src=src;document.getElementById('box').classList.add('open')}
+function closeBox(){document.getElementById('box').classList.remove('open')}
+</script>
+</body>
+</html>
